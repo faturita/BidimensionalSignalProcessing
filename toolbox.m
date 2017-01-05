@@ -105,11 +105,7 @@ function Open_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
-Filepath = get(handles.Filepath,'String');
-
-DIRECTORY = 'C:\\Users\\rramele\\Google Drive\\ATI.Image.Processing\\Imagenes\\';
-DIRECTORY = 'C:\\Users\\User\\Downloads\\adf\\';
-
+DIRECTORY = get(handles.Filepath,'String');
 Filepath = uigetfile(sprintf('%s\\*.*', DIRECTORY));
 Filepath = sprintf('%s%s',DIRECTORY,Filepath);
 
@@ -1498,8 +1494,9 @@ function levelsetactivecontour_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
-DIRECTORY = 'C:\\Users\\rramele\\Google Drive\\ATI.Image.Processing\\Videos\\movie1\\movie1\\';
+% DIRECTORY = '\\Videos\\movie1\\movie1\\';
 
+DIRECTORY = get(handles.Filepath,'String');
 f=figure;
 
 X=str2num(get(handles.X,'string'));
@@ -1675,7 +1672,7 @@ function playmovie_Callback(hObject, eventdata, handles)
 % hObject    handle to playmovie (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-DIRECTORY = 'C:\\Users\\rramele\\Google Drive\\ATI.Image.Processing\\Videos\\movie1\\movie1\\';
+DIRECTORY = get(handles.Filepath,'String');
 
 f=figure;
 
@@ -1700,7 +1697,9 @@ function chooseregion_Callback(hObject, eventdata, handles)
 % hObject    handle to chooseregion (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-DIRECTORY = 'C:\\Users\\rramele\\Google Drive\\ATI.Image.Processing\\Videos\\movie1\\movie1\\';
+% DIRECTORY = '\\Videos\\movie1\\movie1\\';
+
+DIRECTORY = get(handles.Filepath,'String');
 
 f=figure;
 
