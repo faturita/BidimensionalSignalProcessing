@@ -7,12 +7,16 @@
 * Histogram Equalizers
 * ... and many other bands.  Damas free !!
 
-# GUI
+## GUI
 
 If you wanna run the GUI interface to process images, 
 
- toolbox
+```matlab
+toolbox
+```
 
 to edit and modify the GUI, open the matlab GUI editor
 
- guide
+```matlab
+guide
+```
